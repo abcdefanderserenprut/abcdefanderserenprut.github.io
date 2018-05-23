@@ -1,0 +1,122 @@
+/* CSS TIL MOBIL BRUGER */
+body {
+	font-family: arial, sans-serif;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	width: 95%;
+}
+
+p {
+	padding: 0px 0px 0px 10px;
+}
+img {
+	width:30%;
+	height:auto;
+}
+#footer {
+	background: #fff;
+	clear: both;
+	width: 100%;
+	text-align: right;
+	border-top: 1px solid #000;
+}
+
+#header {
+	border-bottom: 1px solid #000;
+	background: #fff;
+}
+#outside {
+	width: 95%;
+	text-align: left;
+	margin: 10% 2% 10% 2%;
+	border: 2px solid #44494d;
+	background: #D1D1D2;
+}
+#outside table {
+	clear: both;
+	width: 100%;
+	padding: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+#header h1 {
+	color: #707578;
+	margin: 0 10px 0 10px;
+	padding: 10px 0 0 5px;
+}
+
+label, input { 
+  font-size: 15px;
+	padding: 10px 0 0 5px;
+  margin: 10px 10px 10px 10px;
+  width: 90%;
+}
+
+.asLink { 
+  color: blue;
+  font-size: 70%;
+  text-decoration: underline;
+}
+
+#loginDiv3, #loginDiv5, #husk, .bottom { 
+  display: none;
+}
+#loginDiv2 { 
+  width: 100%;
+}
+
+
+.luft {padding-top:8px}
+
+.null {
+  padding:0;
+  margin:0;
+  }
+.input {
+	padding:5px;
+	background: #dfe1e2;
+}
+
+.knapperX {  
+  padding: 10px;
+  margin: 10px 10px 10px 10px;
+  color:#fff;
+  background:#777;
+  border:1px solid #000;
+  float: right;
+  width: auto;
+  cursor: pointer;
+}
+
+#text {
+  clear:both;
+  }
+#information {
+  clear:both;
+  }
+#information h2 {	
+  font-size:1.3em;
+  margin:10px 0 0 5px;
+  padding:0;
+}
+.red { 
+  color: red;
+}
+
+#information p {
+  margin:0 5px 8px 5px;
+  padding:0;
+}
+
+#digsig, .tip {
+  display:block;
+}
+
+#minilogo {
+	display: none;
+}
+#maxilogo {
+  margin: 10px 15px 7px 5px;
+}

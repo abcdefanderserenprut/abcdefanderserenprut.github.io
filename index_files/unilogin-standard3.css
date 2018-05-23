@@ -1,0 +1,334 @@
+/* CSS TIL ALMINDELIG BRUGER */
+
+html {
+  margin:0;padding:0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 92.3%;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  padding:0;
+  margin:0;
+}
+
+img {
+  border-style:none;
+}  
+
+a {
+  color:inherit;
+}
+
+a:hover, label.asLink:hover {
+  background: #000;
+  color: #dfe1e2;
+}
+
+.asLink {
+     background:none;
+     border: none;
+     font-size: 90%;
+     padding: 0;
+     text-decoration: underline;
+     cursor: pointer;
+}
+
+#outside {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width: 358px;
+  height:auto;
+  text-align: left;
+  font-size: 0.9em;
+  margin: -180px 0 0 -179px;
+  border: 3px solid #44494d;
+  background: #dfe1e2;
+}
+
+#header {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  background:#fff;
+}
+
+#header h1 {
+  font-size: 20px;
+  color: #707578;
+  margin: 0;
+  padding: 20px 10px 5px 10px;
+}
+
+input {
+  float: left;
+  margin-bottom: 5px;
+  width: 97%;
+  padding: 0;
+}
+
+input[readOnly] { 
+  background: #ccc;
+}
+
+#footer {
+	clear: both;
+	margin-top:10px;
+	text-align: right;
+	border-top: 1px solid #aaa;
+	background: #fff;
+}
+#maxilogo {
+	margin: 5px 10px 15px 42px;
+}
+#minilogo {
+	display: none;
+}
+
+.null {
+  display:none;
+  position:absolute;
+}
+
+#digsig:disabled { color: grey; }
+
+input.disabled {
+  color: grey;
+  background-color: #ccc;
+  cursor: auto;
+  disabled: true;
+}
+
+/* clash: Typer af login der kan bruges: */
+ul { 
+  margin: 0px;
+  padding-left: 20px;
+  font-size: 80%;
+}
+
+/* REDESIGN begynd */
+
+.red { 
+  color: red;
+}
+div.floatleft { 
+  float: left;
+  width: 55%;
+  margin: 2%;
+  min-height: 200px;
+  height: 180px;
+  display: inline;
+  background-color: inherit;
+}
+
+div.center { 
+  min-height: 180px;
+  background-color: inherit;
+  font-size: 110%;
+  padding: 10px;
+}
+div.low { 
+  padding: 50px 50px 30px 10px;
+}
+.inline { 
+  display:inline; 
+}
+div.floatright { 
+  float: left;
+  width: 37%;
+  margin: 2%;
+  min-height: 180px;
+  display: inline;
+}
+
+.knapperX {  
+  padding: 0px 2px 0px 2px;
+  margin: 2px 2px 1em 2px;
+  color:#fff;
+  background:#444;
+  border:1px solid #000;
+  float: right;
+  width: auto;
+  cursor: pointer;
+}
+
+.knapperY {  
+  padding: 2px 0px 2px 0px;
+  float: right;
+  width: auto;
+  clear: both;
+  font-size: 80%;
+  cursor: pointer;
+}
+
+h3 { 
+  margin: 0;
+}
+
+h2 {	
+  font-size:1.3em;
+  margin:0.6em 0 0 0;
+  padding:0 0 0.5em 0;
+}
+
+h2.luft { 
+  margin-top: 1em;
+}
+.bottom { 
+  padding-top: 10px;
+  clear: both;
+}
+
+span.stack, span.stackx { 
+  clear: both;
+  margin: 1px 0px 3px 0px;
+  float: right;
+  display: block;
+} 
+
+span.stackx { 
+  position: relative;
+  right: 73px;
+  top: 23px;
+}
+#nemIdA { 
+  z-index: 2000;
+}
+
+#digSigA { 
+  z-index: 1000;
+}
+
+/* Til at få loginfelter til at forsvinde ved digsig krav.
+   I tidligere version blev de grå. Pt sker "begge dele".
+*/
+.disabled { display:none }
+span.disabled { display:none }
+div#omvendt1 {
+  display: none;
+}
+div#omvendt1.disabled { 
+  display:block;
+  margin-top:5ex;
+  margin-bottom:1ex;
+  text-align:center;
+}
+div#omvendt2.disabled { 
+  display:block;
+  float:none;
+  margin-top:2ex;
+}
+div#omvendt2.disabled>span.stack { 
+  float: none;
+  margin-left:auto;
+  margin-right:auto;
+}
+div#omvendt2.disabled>span.stack>img { 
+  padding-left:35%;
+}
+
+.tipContainer { 
+  text-decoration:none;
+  display: inline;
+  color: inherit;
+  position: relative;
+}
+
+.tip {
+  display: none;
+  position: absolute;
+  border: 1px solid #aaa;
+  width: auto;
+  top: 20;
+  left: 0;
+  background: #fff;
+  color: black;
+}
+
+.tipBody#digSigBody, .tipBody#nemIdBody {
+  white-space: nowrap;
+  min-width: 15em;
+}
+.tip#skiftTip, .tip#valgtSigTip {
+  width: 15em;
+}
+.tip#skiftTip {
+  position: absolute;
+  left: -105px;
+  top: 45px;
+}
+.ie .tip#skiftTip {
+  position: absolute;
+  left: 5em;
+  top: 2em;
+}
+.ie .tip#nemIdTip {
+  top: 1.5em;
+}
+.ie .tip#digSigTip {
+  top: 2em;
+}
+
+
+.tipHead {
+  white-space: nowrap;
+  font-size: 120%;
+  font-weight: bold;
+  padding: 3px 2px 4px 2px;
+}
+
+.tiph3 { 
+  font-weight: bold;
+  font-size: 120%;
+  position: static;
+}
+
+.tipBody { 
+  background: #dfe1e2;
+  border-top: 1px solid #aaa;
+  position: static;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.tipContainer:hover .tip {
+  display: block;
+  cursor: inherit;
+}
+
+.tipBody span {
+  margin: 3px 2px 4px 2px;
+  display: block;
+}
+
+.tip .pil { 
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    margin: 0;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.tip .border-pil { 
+   border-bottom-color: black; 
+   top: -11px; 
+}

